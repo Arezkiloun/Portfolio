@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Arezki Lounis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo-box">
+      <div class="logo-circle">AL</div>
+      <span>arezki_loun</span>
+    </div>
+
+    <nav class="navbar">
+      <button class="nav-btn active" data-page="home">Accueil</button>
+      <button class="nav-btn" data-page="about">À propos</button>
+      <button class="nav-btn" data-page="projects">Projets</button>
+      <button class="nav-btn" data-page="contact">Contact</button>
+    </nav>
+  </header>
+
+  <main class="app">
+
+    <!-- ACCUEIL -->
+    <section class="page active-page" id="home">
+      <div class="hero-content">
+        <h1 id="typing-name" data-text="Arezki LOUNIS"></h1>
+
+        <h2>Étudiant en Informatique & Développeur Web</h2>
+
+        <p class="subtitle">
+          Je crée des solutions intelligentes et des sites web à travers le code
+        </p>
+
+        <div class="tags">
+          <span class="tag purple">✺ Intelligence Artificielle</span>
+          <span class="tag pink">◉ Développement Web</span>
+          <span class="tag cyan">⌘ Programmation</span>
+        </div>
+
+        <div class="buttons">
+          <button class="btn-main" data-page="projects">✦ Voir mes projets</button>
+          <button class="btn-secondary" data-page="contact">✉ Me contacter</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="page" id="about">
+      <div class="about-container">
+
+        <h1 class="about-title">À propos de moi</h1>
+
+        <div class="about-main">
+
+          <div class="about-image">
+            <img src="images/photo-moi.jpg" alt="Photo de profil de Arezki Lounis">
+          </div>
+
+          <div class="about-text">
+            <h2>Mon parcours</h2>
+
+            <p>
+              Je suis <strong>Arezki Lounis</strong>, étudiant en informatique et développeur web junior.
+              Passionné par la programmation, le développement web et les nouvelles technologies,
+              je développe progressivement mes compétences à travers des projets pratiques et concrets.
+            </p>
+
+            <p>
+              Mon objectif est de concevoir des sites web modernes, responsives, simples à utiliser
+              et adaptés aux besoins des utilisateurs. J’aime transformer les idées en solutions
+              numériques claires, organisées et efficaces.
+            </p>
+
+            <p>
+              À travers ce portfolio, je présente mon parcours, mes compétences et quelques projets
+              réalisés durant ma formation et mon apprentissage personnel.
+            </p>
+
+            <div class="about-tags">
+              <span>Étudiant en informatique</span>
+              <span>Développeur Web Junior</span>
+              <span>Passionné par le code</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="about-info">
+          <div class="info-card">
+            <h3>🎓 Formation</h3>
+            <p>Étudiant en informatique</p>
+          </div>
+
+          <div class="info-card">
+            <h3>💻 Domaine</h3>
+            <p>Développement web et programmation</p>
+          </div>
+
+          <div class="info-card">
+            <h3>🚀 Objectif</h3>
+            <p>Créer des projets modernes et utiles</p>
+          </div>
+        </div>
+
+        <h2 class="skills-title">Mes compétences</h2>
+
+        <div class="skills-list">
+
+        <div class="skill-item">HTML / CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">React</div>
+        <div class="skill-item">Node.js</div>
+        <div class="skill-item">Dart</div>
+        <div class="skill-item">Flutter</div>
+        <div class="skill-item">Python</div>
+        <div class="skill-item">Java</div>
+        <div class="skill-item">C</div>
+        <div class="skill-item">C++</div>
+        <div class="skill-item">Git / GitHub</div>
+        <div class="skill-item">SQL</div>
+        </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="page" id="projects">
+      <div class="content-box">
+        <h2>Mes projets</h2>
+
+        <div class="project-container">
+
+          <div class="project-card">
+            <h3>Portfolio personnel</h3>
+            <p>
+              Site web personnel moderne créé avec HTML, CSS et JavaScript
+              pour présenter mon profil, mes compétences et mes projets.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Application de gestion d’un cabinet médical</h3>
+            <p>
+              Application développée avec Java et SQL permettant de gérer les patients,
+              les rendez-vous, les consultations et l’organisation d’un cabinet médical.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Mini projet d’algorithmique</h3>
+            <p>
+                Application dédiée aux étudiants de première année informatique pour apprendre
+                les bases de l’algorithmique. Le front-end mobile est développé avec Dart et Flutter,
+                l’interface web avec React, et le back-end avec Node.js.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <!-- CONTACT -->
+<!-- CONTACT -->
+<section class="page" id="contact">
+  <div class="contact-container">
+
+    <h1 class="contact-title">Me contacter</h1>
+
+    <p class="contact-subtitle">
+      Vous pouvez me contacter pour discuter d’un projet, d’une collaboration
+      ou simplement pour donner votre avis sur mon portfolio.
+    </p>
+
+    <div class="contact-grid">
+
+      <a class="contact-card" href="mailto:lounisarezki91@gmail.com">
+        <div class="contact-icon">
+          <img src="images/imagesmail.png" alt="Email">
+        </div>
+        <div>
+          <h3>Email</h3>
+          <p>lounisarezki91@gmail.com</p>
+        </div>
+      </a>
+
+      <a class="contact-card" href="https://github.com/Arezkiloun" target="_blank">
+        <div class="contact-icon">
+          <img src="images/imagesgit.png" alt="GitHub">
+        </div>
+        <div>
+          <h3>GitHub</h3>
+          <p>github.com/Arezkiloun</p>
+        </div>
+      </a>
+
+      <a class="contact-card" href="https://www.linkedin.com/in/Arezkilounis" target="_blank">
+        <div class="contact-icon">
+          <img src="images/imageslink.jpg" alt="LinkedIn">
+        </div>
+        <div>
+          <h3>LinkedIn</h3>
+          <p>linkedin.com/in/Arezkilounis</p>
+        </div>
+      </a>
+
+      <a class="contact-card" href="https://web.facebook.com/me/" target="_blank">
+        <div class="contact-icon">
+          <img src="images/imagesface.png" alt="Facebook">
+        </div>
+        <div>
+          <h3>Facebook</h3>
+          <p>Lounis Arezki</p>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="whatsapp-box">
+      <h2>Contact rapide</h2>
+      <p>
+        Pour une réponse rapide, vous pouvez me contacter directement sur WhatsApp.
+      </p>
+
+      <a class="whatsapp-btn" href="https://wa.me/213549831123" target="_blank">
+        <img src="images/imageswat.jpg" alt="WhatsApp">
+        Me contacter sur WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
