@@ -1137,3 +1137,62 @@ body {
     padding: 14px 18px;
   }
 }
+/* ===== AMÉLIORATION CARTE PROJET PORTFOLIO ===== */
+
+.project-img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid rgba(0, 200, 255, 0.15);
+}
+
+.project-content {
+  padding: 25px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 22px;
+}
+
+.project-tech span {
+  color: #45dfff;
+  background: rgba(0, 200, 255, 0.08);
+  border: 1px solid rgba(0, 200, 255, 0.18);
+  padding: 7px 13px;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.project-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  padding: 12px 22px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #9c19ff, #00b8e6);
+  box-shadow: 0 0 20px rgba(156, 25, 255, 0.35);
+  transition: 0.3s ease;
+}
+
+.project-btn.secondary {
+  background: transparent;
+  border: 1px solid rgba(0, 200, 255, 0.35);
+  color: #45dfff;
+}
+
+.project-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 28px rgba(0, 184, 230, 0.45);
+}
