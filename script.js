@@ -1,45 +1,59 @@
+
 const buttons = document.querySelectorAll("[data-page]");
 const pages = document.querySelectorAll(".page");
 const navButtons = document.querySelectorAll(".nav-btn");
 
-/* Changement d'interface avec animation */
+/* Changement de page */
 function showPage(pageId) {
   const currentPage = document.querySelector(".page.active-page");
   const nextPage = document.getElementById(pageId);
 
-  if (!nextPage || currentPage === nextPage) return;
+  if (!nextPage) return;
+
+  /* Si la page est déjà ouverte, retour en haut */
+  if (currentPage === nextPage) {
+    nextPage.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+    return;
+  }
 
   if (currentPage) {
     currentPage.classList.add("page-exit");
   }
 
   setTimeout(() => {
-    pages.forEach(page => {
+    pages.forEach((page) => {
       page.classList.remove("active-page", "page-exit");
     });
 
     nextPage.classList.add("active-page");
 
-    navButtons.forEach(nav => {
-      nav.classList.remove("active");
+    navButtons.forEach((navButton) => {
+      navButton.classList.remove("active");
     });
 
-    const activeNav = document.querySelector(`.nav-btn[data-page="${pageId}"]`);
+    const activeNavButton = document.querySelector(
+      `.nav-btn[data-page="${pageId}"]`
+    );
 
-    if (activeNav) {
-      activeNav.classList.add("active");
+    if (activeNavButton) {
+      activeNavButton.classList.add("active");
     }
 
     nextPage.scrollTo({
-  top: 0,
-  behavior: "smooth"
-});
+      top: 0,
+      behavior: "smooth"
+    });
   }, 250);
 }
 
-buttons.forEach(button => {
+/* Boutons de navigation */
+buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    const pageId = button.getAttribute("data-page");
+    const pageId = button.dataset.page;
     showPage(pageId);
   });
 });
@@ -50,21 +64,24 @@ const typingName = document.getElementById("typing-name");
 function typeWriterName() {
   if (!typingName) return;
 
-  const text = typingName.getAttribute("data-text");
+  const text = typingName.dataset.text || "Arezki LOUNIS";
+
   typingName.textContent = "";
   typingName.classList.add("typing");
 
   let index = 0;
 
   const typingInterval = setInterval(() => {
-    typingName.textContent += text.charAt(index);
-    index++;
-
-    if (index >= text.length) {
-      clearInterval(typingInterval);
-      typingName.classList.remove("typing");
+    if (index < text.length) {
+      typingName.textContent += text.charAt(index);
+      index++;
+      return;
     }
+
+    clearInterval(typingInterval);
+    typingName.classList.remove("typing");
   }, 120);
 }
 
 typeWriterName();
+

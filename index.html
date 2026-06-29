@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Lounis Arezki | Portfolio Développeur Web</title>
 
   <meta
     name="description"
     content="Portfolio de Lounis Arezki, étudiant en informatique et développeur web junior. Découvrez ses compétences, ses projets et ses contacts professionnels."
-  />
+  >
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header class="header">
     <div class="logo-box">
       <div class="logo-circle">AL</div>
       <span>arezki_loun</span>
     </div>
 
-    <nav class="navbar">
-      <button class="nav-btn active" data-page="home">Accueil</button>
-      <button class="nav-btn" data-page="about">À propos</button>
-      <button class="nav-btn" data-page="projects">Projets</button>
-      <button class="nav-btn" data-page="contact">Contact</button>
+    <nav class="navbar" aria-label="Navigation principale">
+      <button class="nav-btn active" type="button" data-page="home">Accueil</button>
+      <button class="nav-btn" type="button" data-page="about">À propos</button>
+      <button class="nav-btn" type="button" data-page="projects">Projets</button>
+      <button class="nav-btn" type="button" data-page="contact">Contact</button>
     </nav>
   </header>
 
@@ -40,7 +41,7 @@
         <h2>Étudiant en Informatique & Développeur Web</h2>
 
         <p class="subtitle">
-          Je crée des solutions intelligentes et des sites web à travers le code
+          Je crée des solutions intelligentes et des sites web à travers le code.
         </p>
 
         <div class="tags">
@@ -50,8 +51,13 @@
         </div>
 
         <div class="buttons">
-          <button class="btn-main" data-page="projects">✦ Voir mes projets</button>
-          <button class="btn-secondary" data-page="contact">✉ Me contacter</button>
+          <button class="btn-main" type="button" data-page="projects">
+            ✦ Voir mes projets
+          </button>
+
+          <button class="btn-secondary" type="button" data-page="contact">
+            ✉ Me contacter
+          </button>
         </div>
       </div>
     </section>
@@ -63,29 +69,35 @@
         <h1 class="about-title">À propos de moi</h1>
 
         <div class="about-main">
-
           <div class="about-image">
-            <img src="images/photo-moi.jpg" alt="Photo de profil de Arezki Lounis">
+            <img
+              src="images/photo-moi.jpg"
+              alt="Photo de profil de Arezki Lounis"
+            >
           </div>
 
           <div class="about-text">
             <h2>Mon parcours</h2>
 
             <p>
-              Je suis <strong>Arezki Lounis</strong>, étudiant en informatique et développeur web junior.
-              Passionné par la programmation, le développement web et les nouvelles technologies,
-              je développe progressivement mes compétences à travers des projets pratiques et concrets.
+              Je suis <strong>Arezki Lounis</strong>, étudiant en informatique
+              et développeur web junior. Passionné par la programmation,
+              le développement web et les nouvelles technologies, je développe
+              progressivement mes compétences à travers des projets pratiques
+              et concrets.
             </p>
 
             <p>
-              Mon objectif est de concevoir des sites web modernes, responsives, simples à utiliser
-              et adaptés aux besoins des utilisateurs. J’aime transformer les idées en solutions
-              numériques claires, organisées et efficaces.
+              Mon objectif est de concevoir des sites web modernes, responsives,
+              simples à utiliser et adaptés aux besoins des utilisateurs.
+              J’aime transformer les idées en solutions numériques claires,
+              organisées et efficaces.
             </p>
 
             <p>
-              À travers ce portfolio, je présente mon parcours, mes compétences et quelques projets
-              réalisés durant ma formation et mon apprentissage personnel.
+              À travers ce portfolio, je présente mon parcours, mes compétences
+              et quelques projets réalisés durant ma formation et mon
+              apprentissage personnel.
             </p>
 
             <div class="about-tags">
@@ -94,7 +106,6 @@
               <span>Passionné par le code</span>
             </div>
           </div>
-
         </div>
 
         <div class="about-info">
@@ -127,8 +138,13 @@
           <div class="skill-item">Java</div>
           <div class="skill-item">C</div>
           <div class="skill-item">C++</div>
-          <div class="skill-item">Git / GitHub</div>
+          <div class="skill-item">C#</div>
+          <div class="skill-item">Windows Forms</div>
+          <div class="skill-item">.NET</div>
           <div class="skill-item">SQL</div>
+          <div class="skill-item">MySQL</div>
+          <div class="skill-item">QuestPDF</div>
+          <div class="skill-item">Git / GitHub</div>
         </div>
 
       </div>
@@ -137,19 +153,20 @@
     <!-- PROJETS -->
     <section class="page" id="projects">
       <div class="content-box projects-box">
+
         <h2>Mes projets</h2>
 
         <div class="project-container">
 
-          <!-- Projet 1 -->
-          <div class="project-card">
+          <!-- PROJET 1 -->
+          <article class="project-card">
             <div class="project-content">
               <h3>Portfolio personnel</h3>
 
               <p>
-                Site web personnel développé avec HTML, CSS et JavaScript pour présenter
-                mon profil, mes compétences, mes projets et mes moyens de contact.
-                Le site est responsive, animé et hébergé avec Netlify.
+                Site web personnel développé avec HTML, CSS et JavaScript pour
+                présenter mon profil, mes compétences, mes projets et mes moyens
+                de contact. Le site est responsive, animé et hébergé avec Netlify.
               </p>
 
               <div class="project-tech">
@@ -160,55 +177,76 @@
               </div>
 
               <div class="project-links">
-                <a href="https://github.com/Arezkiloun/portfolio" target="_blank" class="project-btn">
+                <a
+                  class="project-btn"
+                  href="https://github.com/Arezkiloun/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Code GitHub
                 </a>
 
-                <a href="https://lounis-arezki-portfolio.netlify.app" target="_blank" class="project-btn secondary">
+                <a
+                  class="project-btn secondary"
+                  href="https://lounis-arezki-portfolio.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Voir le site
                 </a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Projet 2 -->
-          <div class="project-card">
+          <!-- PROJET 2 -->
+          <article class="project-card">
             <div class="project-content">
-              <h3>Application de gestion d’un cabinet médical</h3>
+              <h3>Gestion d’un cabinet médical</h3>
 
               <p>
-                Application développée avec Java et SQL permettant de gérer les patients,
-                les rendez-vous, les consultations et l’organisation d’un cabinet médical.
+                Application de bureau développée avec Java et SQL permettant de
+                gérer les patients, les rendez-vous, les consultations, les
+                factures, les ordonnances et les dossiers médicaux.
               </p>
 
               <div class="project-tech">
                 <span>Java</span>
-                <span>SQL</span>
                 <span>Java Swing</span>
+                <span>SQL</span>
                 <span>JDBC</span>
               </div>
 
               <div class="project-links">
-                <a href="https://github.com/Arezkiloun/Gestion_Cabinet_Medical" target="_blank" class="project-btn">
+                <a
+                  class="project-btn"
+                  href="https://github.com/Arezkiloun/Gestion_Cabinet_Medical"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Code GitHub
                 </a>
 
-                <a href="https://www.linkedin.com/posts/arezki-lounis-4849b0369_java-sql-javaswing-ugcPost-7472698858620469248-d7kB/" target="_blank" class="project-btn secondary">
+                <a
+                  class="project-btn secondary"
+                  href="https://www.linkedin.com/posts/arezki-lounis-4849b0369_java-sql-javaswing-ugcPost-7472698858620469248-d7kB/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Publication LinkedIn
                 </a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Projet 3 -->
-          <div class="project-card">
+          <!-- PROJET 3 -->
+          <article class="project-card">
             <div class="project-content">
-              <h3>Let’sAllgo — Plateforme éducative d’algorithmique</h3>
+              <h3>Let’sAllgo — Plateforme éducative</h3>
 
               <p>
-                Plateforme éducative dédiée à l’apprentissage de l’algorithmique,
-                réalisée de janvier à avril 2026 dans le cadre d’un projet académique.
-                Elle propose des cours, des quiz, un suivi de progression, un classement,
+                Plateforme éducative consacrée à l’apprentissage de
+                l’algorithmique, réalisée de janvier à avril 2026. Elle propose
+                des cours, des quiz, un suivi de progression, un classement,
                 un espace fichiers et une interface d’administration.
               </p>
 
@@ -216,55 +254,119 @@
                 <span>Flutter</span>
                 <span>Dart</span>
                 <span>Node.js</span>
-                <span>Express.js</span>
                 <span>TypeScript</span>
                 <span>Prisma</span>
                 <span>PostgreSQL</span>
               </div>
 
               <div class="project-links">
-                <a href="https://github.com/Arezkiloun/LetsAllGo" target="_blank" class="project-btn">
+                <a
+                  class="project-btn"
+                  href="https://github.com/Arezkiloun/LetsAllGo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Code GitHub
                 </a>
 
-                <a href="https://www.linkedin.com/posts/arezki-lounis-4849b0369_flutter-dart-nodejs-ugcPost-7472760724524679169-6MkT/" target="_blank" class="project-btn secondary">
-                  Présentation LinkedIn
+                <a
+                  class="project-btn secondary"
+                  href="https://www.linkedin.com/posts/arezki-lounis-4849b0369_flutter-dart-nodejs-ugcPost-7472760724524679169-6MkT/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Publication LinkedIn
                 </a>
               </div>
             </div>
-          </div>
-          <!-- Projet 4 -->
-<div class="project-card">
-  <div class="project-content">
-    <h3>Formax Academy — Plateforme de formations en ligne</h3>
+          </article>
 
-    <p>
-      Plateforme web de formations en ligne développée avec HTML, CSS et JavaScript.
-      Le site permet aux utilisateurs de consulter plusieurs formations professionnelles,
-      de les ajouter au panier et de finaliser leur commande directement via WhatsApp.
-      Le projet intègre un panier dynamique, une offre spéciale et un design responsive.
-    </p>
+          <!-- PROJET 4 -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Formax Academy</h3>
 
-    <div class="project-tech">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Panier dynamique</span>
-      <span>WhatsApp</span>
-      <span>Netlify</span>
-    </div>
+              <p>
+                Plateforme web de formations en ligne développée avec HTML,
+                CSS et JavaScript. Les utilisateurs peuvent consulter les
+                formations, les ajouter à un panier dynamique et finaliser
+                leur commande directement via WhatsApp.
+              </p>
 
-    <div class="project-links">
-      <a href="https://www.linkedin.com/posts/arezki-lounis-4849b0369_webdevelopment-frontenddevelopment-javascript-share-7473114870889218050-cTc4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFtzOaQBeknFb0KN1qmy7g0XOjPjxozr-9k" target="_blank" class="project-btn">
-       Présentation LinkedIn
-      </a>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Panier dynamique</span>
+                <span>WhatsApp</span>
+                <span>Netlify</span>
+              </div>
 
-      <a href="https://formax-acadmy.netlify.app/" target="_blank" class="project-btn secondary">
-        Voir le site
-      </a>
-    </div>
-  </div>
-</div>
+              <div class="project-links">
+                <a
+                  class="project-btn"
+                  href="https://www.linkedin.com/posts/arezki-lounis-4849b0369_webdevelopment-frontenddevelopment-javascript-share-7473114870889218050-cTc4/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Publication LinkedIn
+                </a>
+
+                <a
+                  class="project-btn secondary"
+                  href="https://formax-acadmy.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Voir le site
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJET 5 -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3>GestionUsine — Laiterie Medjdoub</h3>
+
+              <p>
+                Application locale développée en C# avec Windows Forms pour
+                la Laiterie Medjdoub à Toghza. Elle centralise la gestion des
+                employés, des clients, des produits, des stocks, des ventes,
+                des crédits, des dépenses, des recettes et de la caisse.
+              </p>
+
+              <div class="project-tech">
+                <span>C#</span>
+                <span>Windows Forms</span>
+                <span>.NET 10</span>
+                <span>MySQL</span>
+                <span>MySqlConnector</span>
+                <span>QuestPDF</span>
+                <span>WampServer</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  class="project-btn"
+                  href="https://github.com/Arezkiloun/Gestion_Usine_Camembert"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code GitHub
+                </a>
+
+                <a
+                  class="project-btn secondary"
+                  href="https://www.linkedin.com/posts/arezki-lounis-4849b0369_csharp-dotnet-windowsforms-ugcPost-7477112954925113344-fhue/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Publication LinkedIn
+                </a>
+              </div>
+            </div>
+          </article>
 
         </div>
       </div>
@@ -277,15 +379,15 @@
         <h1 class="contact-title">Me contacter</h1>
 
         <p class="contact-subtitle">
-          Vous pouvez me contacter pour discuter d’un projet, d’une collaboration
-          ou simplement pour donner votre avis sur mon portfolio.
+          Vous pouvez me contacter pour discuter d’un projet, d’une
+          collaboration ou simplement pour donner votre avis sur mon portfolio.
         </p>
 
         <div class="contact-grid">
 
           <a class="contact-card" href="mailto:lounisarezki91@gmail.com">
             <div class="contact-icon">
-              <img src="images/imagesmail.png" alt="Email">
+              <img src="images/imagesmail.png" alt="Icône Email">
             </div>
 
             <div>
@@ -294,9 +396,14 @@
             </div>
           </a>
 
-          <a class="contact-card" href="https://github.com/Arezkiloun" target="_blank">
+          <a
+            class="contact-card"
+            href="https://github.com/Arezkiloun"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div class="contact-icon">
-              <img src="images/imagesgit.png" alt="GitHub">
+              <img src="images/imagesgit.png" alt="Icône GitHub">
             </div>
 
             <div>
@@ -305,9 +412,14 @@
             </div>
           </a>
 
-          <a class="contact-card" href="https://www.linkedin.com/in/arezki-lounis-4849b0369" target="_blank">
+          <a
+            class="contact-card"
+            href="https://www.linkedin.com/in/arezki-lounis-4849b0369"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div class="contact-icon">
-              <img src="images/imageslink.jpg" alt="LinkedIn">
+              <img src="images/imageslink.jpg" alt="Icône LinkedIn">
             </div>
 
             <div>
@@ -316,9 +428,14 @@
             </div>
           </a>
 
-          <a class="contact-card" href="https://www.facebook.com/arezki.lounis.753502" target="_blank">
+          <a
+            class="contact-card"
+            href="https://www.facebook.com/arezki.lounis.753502"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div class="contact-icon">
-              <img src="images/imagesface.png" alt="Facebook">
+              <img src="images/imagesface.png" alt="Icône Facebook">
             </div>
 
             <div>
@@ -333,15 +450,17 @@
           <h2>Contact rapide</h2>
 
           <p>
-            Pour une réponse rapide, vous pouvez me contacter directement sur WhatsApp.
+            Pour une réponse rapide, vous pouvez me contacter directement
+            sur WhatsApp.
           </p>
 
           <a
             class="whatsapp-btn"
-            href="https://api.whatsapp.com/send?phone=213549831123&text=Bonjour%20Arezki%2C%20je%20viens%20de%20voir%20votre%20portfolio."
+            href="https://api.whatsapp.com/send?phone=213549831123&amp;text=Bonjour%20Arezki%2C%20je%20viens%20de%20voir%20votre%20portfolio."
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <img src="images/imageswat.jpg" alt="WhatsApp">
+            <img src="images/imageswat.jpg" alt="Icône WhatsApp">
             Me contacter sur WhatsApp
           </a>
         </div>
